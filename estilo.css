@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+/* Seções */
+section {
+  padding: 100px 20px 60px; /* espaço para navbar fixa */
+  text-align: center;
+}
+
+/* TÍTULO COM EMOJIS */
+h1.title::before {
+  content: "🚀";
+  margin-right: 10px;
+}
+
+h1.title::after {
+  content: "🌟";
+  margin-left: 10px;
+}
+
+h1.title {
+  font-size: 2.8rem;
+  color: white;
+}
+
+/* IFRAME */
+.iframe-section iframe {
+  width: 80%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* CAIXA INFORMATIVA */
+.info-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CARTÃO COM IMAGEM */
+.card {
+  background-image: url('https://source.unsplash.com/400x250/?code');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+/* UNIDADES DIFERENTES */
+.unit-box {
+  margin: 20px auto;
+  color: white;
+  padding: 15px;
+}
+
+.px-box {
+  background-color: #2980b9;
+  width: 300px;
+  font-size: 16px;
+}
+
+.percent-box {
+  background-color: #27ae60;
+  width: 80%;
+  font-size: 120%;
+}
+
+.rem-box {
+  background-color: #e67e22;
+  width: 20rem;
+  font-size: 1.5rem;
+}
+
+/* FLEXBOX CAIXAS */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  background-color: #9b59b6;
+  color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.flex-box#especial {
+  background-color: #c0392b;
+}
+
+/* PSEUDO-ELEMENTOS */
+.pseudo-box {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.pseudo-box h2::first-letter {
+  color: red;
+  font-size: 3rem;
+}
+
+.pseudo-box h2::first-line {
+  background-color: yellow;
+}
